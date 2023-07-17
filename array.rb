@@ -2,7 +2,6 @@
 #to convert any into integer use to_i and for any into string use to_s
 
 
-
 #Q1.) write a program to check whether a values exists in array or not??
 
 # class P1
@@ -54,7 +53,7 @@
 
 class P3
     def printReverse(temp)
-    
+        
     end
     def initializem
         arr = Array.new
@@ -64,7 +63,6 @@ class P3
         for x in (1...n.to_i)
             num1 = gets
             arr << num1.to_i
-            
         end
     end
 
