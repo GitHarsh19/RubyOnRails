@@ -1,0 +1,21 @@
+Learnings --> 
+There are basically 3 Types of Environment -->
+Development
+Test
+Production
+Root route is important because in production the default page doesnot shows..
+To create root route we go in routes.rb file and type -->  root to: "main#index"
+To correctly route pages Through application.html.erb File, we should have <%= yield %> tag in body
+* We can render another view inside our layout and To do that we use partial render--> <%= render partial: "shared/navbar" %> 
+  Here shared is folder in views and navbar represents the partial render html file which is named as --> _navbar.html.erb  (underscore represents partial) *
+* Ruby helper --> link_to ( used for generating links directly passing to routes without requiring to change names multiple times )
+  <%= link_to "About Us", about_path, class:"nav-link" %> (example of helper) 1st Parameter is description,2nd Parameter is route, 3rd is to map to html page  *
+Here are some useful commands in rails --> 
+1.) To create a new project --> rails new (project_name)
+2.) To install gems into gemfile --> bundle install
+3.) To start rails server --> rails s
+4.) To start rails console --> rails c
+5.) To check all the available routes --> rails routes
+6.) To run a database migration --> rails db:migrate
+7.) To rollback a migration --> rails db:rollback
+8.) 

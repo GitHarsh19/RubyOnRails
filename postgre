@@ -1,0 +1,9 @@
+1.) Switch to postgre froim harshitpc --> sudo -i -u postgre
+2.) To enter into postgre --> psql
+3.) to quit from postgre --> \q
+4.) Create a new database --> createdb my_pgdb (database name)
+5.) Switch between databases --> psql -d my_pgdb
+6.) To show or check status of db --> conninfo
+7.) To start and stop PostgreSQL server --> sudo service postgresql start/stop/status/restart
+8.) To exit/logout from postgres@harshitPC --> exit (2 times)
+9.) To enter into postgres cli --> psql

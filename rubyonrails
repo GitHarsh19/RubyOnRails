@@ -1,0 +1,47 @@
+Q.) What is ORM and Active Record In Rails?
+
+Ans.) There is an essential mismatch between program's object view and database's relational data view...ne way to resolve this mismatch was through the use of Object-relational-mapping (ORM) tools. 
+ORM is the mapping of relational database tables to object-oriented classes...While using Active Record, you have to no longer deal with database constructs like tables, rows or columns...
+Application only deals with classes, attributes and objects...
+Active Record gives us several mechanisms, the most important being the ability to -->
+1.)Represent models and their data.
+2.)Represent associations between these models.
+3.)Represent inheritance hierarchies through related models.
+4.)Validate models before they get persisted to the database.
+5.)Perform database operations in an object-oriented fashion.
+Convention over Configuration Principle (Rails)
+To create Active Record models, subclass the ApplicationRecord class and you're good to go -->
+class Product < ApplicationRecord
+end
+Check out all CRUD Ops in https://guides.rubyonrails.org/active_record_basics.html
+
+Q.) What is Gems In Ruby?
+Ans.) They are simply open source libraries that contain Ruby code and are packaged with a little extra data . Using a gem allows a programmer to use the code within the gem in their own program,
+without explicitly inserting that code...
+Examples --> 
+1.) Bundler — Provides a consistent environment for Ruby projects by tracking and installing the exact gems and versions that are needed.
+2.) RSpec — A testing framework that supports Behavior Driven Development for Ruby.
+3.) Devise — Devise works with authentication. For any website that needs to user log-in’s, Devise handles sign in, sign up, reset password, etc.
+4.) JSON — Provides an API for parsing JSON from text.
+
+Q.) What is MVC Architecture?
+Ans.) The Model-View-Controller (MVC) is an architectural pattern that separates an application into three main logical components: the model, the view, and the controller...
+The Model component corresponds to all the data-related logic that the user works with...
+The View component is used for all the UI logic of the application...
+Controllers act as an interface between Model and View components to process all the business logic and incoming requests, 
+manipulate data using the Model component and interact with the Views to render the final output...
+Requests first come to the controller, controller finds an appropriate view and interacts with model which in turn interacts with database and send response to controller. 
+Then controller gives the output to the view based on the response.
+
+Q.) What are Routes ??
+Ans.) Routes are the matchers for the requested URL's...It's a way to redirect incoming requests to controllers and actions...
+
+Q.) What are Helpers ??
+Ans.) A helper is a method that is (mostly) used in your Rails views to share reusable code. Rails comes with a set of built-in helper methods...
+Example --> link_to (used to build links)
+
+Q.) What is yield keyword ??
+Ans.) Yield is used inside methods for calling a block....It is pausing our method & transfering control to the block so that it can do its thing & then come back with a return value.
+
+Q.) Can default root page be changed?
+Ans.) Defualt page for any webpage can be changed using root in routes.rb file where we can fix default home page for our webpage
